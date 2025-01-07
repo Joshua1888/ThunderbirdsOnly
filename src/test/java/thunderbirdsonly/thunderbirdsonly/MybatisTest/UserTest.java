@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import thunderbirdsonly.thunderbirdsonly.mapper.UserMapper;
-import thunderbirdsonly.thunderbirdsonly.model.User;
+import thunderbirdsonly.thunderbirdsonly.DOT.User;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;

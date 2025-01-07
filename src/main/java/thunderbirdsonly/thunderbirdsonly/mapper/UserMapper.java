@@ -2,9 +2,9 @@ package thunderbirdsonly.thunderbirdsonly.mapper;
 
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
-
 import org.apache.ibatis.annotations.Select;
-import thunderbirdsonly.thunderbirdsonly.model.User;
+import org.apache.ibatis.annotations.Update;
+import thunderbirdsonly.thunderbirdsonly.DOT.User;
 
 
 @Mapper
@@ -24,6 +24,14 @@ public interface UserMapper {
 
     // Search User Based on username and password
     @Select("SELECT * FROM thunderbirds.user WHERE username = #{username} and password = #{password}")
-    User getbyUsernameandPass(User user);
+    User getbyUsernameAndPass(User user);
+
+    @Select("SELECT COUNT(*) FROM thunderbirds.user WHERE username = #{username} OR email = #{email}")
+    int countByUsernameOrEmail(User user);
+
+
+
+    @Update("UPDATE thunderbirds.user SET password = #{password}, update_time = NOW() WHERE id = #{id}")
+    void updatePassword(User user);
 
 }

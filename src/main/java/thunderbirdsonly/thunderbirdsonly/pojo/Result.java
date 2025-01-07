@@ -1,4 +1,4 @@
-package thunderbirdsonly.thunderbirdsonly.model;
+package thunderbirdsonly.thunderbirdsonly.pojo;
 
 public class Result {
     private int status;
@@ -14,7 +14,6 @@ public class Result {
 
     public Result() {
     }
-
 
     public void setStatus(int status) {
         this.status = status;
@@ -55,7 +54,6 @@ public class Result {
     @Override
     public String toString() {
         return "Result [status=" + status + ", message=" + message + ", data=" + data + "]";
-
     }
 
 
