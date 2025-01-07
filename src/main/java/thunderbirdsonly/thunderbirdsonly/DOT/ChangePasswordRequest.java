@@ -8,8 +8,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ChangePasswordRequest {
-    private Long userId;          // 用户ID
-    private String oldPassword;   // 旧密码
-    private String newPassword;   // 新密码
+    private Long userId;
+    private String oldPassword;
+    private String newPassword;
 
 }

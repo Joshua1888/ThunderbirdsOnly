@@ -44,6 +44,12 @@
             <version>5.8.0</version> <!-- 或与你的项目兼容的版本 -->
         </dependency>
 
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>test</scope>
+        </dependency>
+
 
         <dependency>
             <groupId>org.projectlombok</groupId>
